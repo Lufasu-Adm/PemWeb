@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSS Selector</title>
+<style>
+/* Universal Selector */
+* {
+color: red;
+background-color: whitesmoke;
+}
+/* Element Selector */
+h2 {
+color: purple;
+}
+/* Class Selector */
+p.success {
+color: green;
+}
+/* Id Selector */
+p#danger {
+color: red;
+}
+/* Attribute Selector */
+a[href] {
+font-size: 50px;
+}
+/* Group Selector */
+h1,
+h2,
+p {
+text-transform: uppercase;
+}
+/* Element Spesific Selector */
+p.judul {
+font-size: large;
+}
+span#important {
+color: red;
+font-weight: bold;
+}
+/* Descendant Selector */
+div p {
+font-size: x-large;
+}
+/* Child Selector */
+div > p {
+color: cornflowerblue;
+}
+</style>
+</head>
+<body>
+<h1>This is Heading One</h1>
+<p>This is paragraph One</p>
+<hr />
+<h2 class="judul">This is Heading Two</h2>
+<p>This is paragraph Two</p>
+<hr />
+<h3>This is Heading Three</h3>
+<p class="success">Accept</p>
+<hr />
+<h4>This is Heading Four</h4>
+<p id="danger">Decline</p>
+<hr />
+<a>Link</a>
+<a href="https://is.ittelkom-sby.ac.id/" target="_blank">TAP!!!</a>
+<hr />
+<p class="judul">
+  Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor 
+  Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor 
+  Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor .
+<span id="important">dolor</span>, natus et quod perferendis voluptas 
+nemo
+exercitationem perspiciatis necessitatibus velit sapiente minima. 
+Pariatur
+consectetur veniam accusantium sit earum dolorem.
+</p>
+<hr />
+<div>
+<p>
+Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor 
+Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor 
+Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor .
+</p>
+</div>
+</body>
+</html
