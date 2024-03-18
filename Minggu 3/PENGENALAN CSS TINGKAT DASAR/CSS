@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    overflow: hidden;
+    background-color: rgb(239,239,239);
+}
+
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: black;
+    font-size: medium;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 5px solid white;
+}
+  
+li a:hover {
+    background-color: #636060;
+    border-bottom-color: rgb(67,172,171);
+}
+
+.home a {
+    background-color: rgb(67,172,171);
+    color: white !important;
+}
+
+.service a:hover {
+    color: white;
+}
+
+.project a:hover {
+    color: white;
+}
+
+.about a:hover {
+    color: white;
+}
