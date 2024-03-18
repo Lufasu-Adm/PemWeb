@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="CSS/Nav.css">
+<body>
+    <ul>
+        <li class="home"><a href="#Home" >HOME</a></li>
+        <li class="service"><a href="">SERVICE</a></li>
+        <li class="project"><a href="">PROJECT</a></li>
+        <li class="about"><a href="">ABOUT</a></li>
+    </ul>
+</body>
+</html>
