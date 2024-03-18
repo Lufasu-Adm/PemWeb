@@ -1,0 +1,87 @@
+3.	<!DOCTYPE html>
+4.	<html lang="en">
+5.	  <head>
+6.	    <meta charset="UTF-8" />
+7.	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+8.	    <title>Document</title>
+9.	    <style>
+10.	      body,
+11.	      html {
+12.	        margin: 0;
+13.	        padding: 0;
+14.	        height: 100%;
+15.	      }
+16.	      .container {
+17.	        width: 100%;
+18.	        height: fit-content;
+19.	      }
+20.	      .header {
+21.	        width: 100%;
+22.	        height: 710px;
+23.	        background-image: url("1349848.jpeg");
+24.	        background-size: cover;
+25.	        background-position: center;
+26.	        background-repeat: no-repeat;
+27.	        display: flex;
+28.	        justify-content: center;
+29.	        align-items: center;
+30.	      }
+31.	      .profile {
+32.	        position: sticky;
+33.	        top: 0;
+34.	        height: 200px;
+35.	        width: 200px;
+36.	        background-image: url("cropped-1920-1080-1349850.jpeg");
+37.	        background-size: cover;
+38.	        border-radius: 50%;
+39.	        border: 4px solid blueviolet;
+40.	      }
+41.	      .fill {
+42.	        background-color: #070f2b;
+43.	        width: 100%;
+44.	        height: 1000px;
+45.	        padding-top: 100px;
+46.	      }
+47.	      .wallpaper {
+48.	        width: 70%;
+49.	        height: 70%;
+50.	        margin: 0 auto;
+51.	        background-image: url("cropped-1920-1080-1349849.jpeg");
+52.	        background-size: cover;
+53.	        background-repeat: no-repeat;
+54.	      }
+55.	      legend {
+56.	        color: yellow;
+57.	      }
+58.	      fieldset {
+59.	        width: 50%;
+60.	        margin: 0 auto;
+61.	        background-color: rgba(0, 0, 0, 0.6);
+62.	        color: aliceblue;
+63.	        font-family: sans-serif;
+64.	        font-size: 30px;
+65.	        border: 0px;
+66.	      }
+67.	    </style>
+68.	  </head>
+69.	  <body>
+70.	    <div class="container">
+71.	      <div class="header"><div class="profile"></div></div>
+72.	      <div class="fill">
+73.	        <div class="wallpaper">
+74.	          <fieldset>
+75.	            <legend>THE DAHLIA</legend>
+76.	            <p>Constance "The Dahlia" is a member of the Ever-Flame Mansion. She made her first appearance in Myriad Celestia Trailer — "A Night of Ever-Flame- Scene 33.
+77.	              <br />Appereance
+78.	             <br />
+79.	             
+80.	Constance is a young woman with long black hair that reaches her thigh and has light gray blue undertones. She has black pride-shaped horns, demon tail, dark purple eyes and a purple mole under her left eye.
+81.	 
+82.	             <br />
+83.	            </p>
+84.	          </fieldset>
+85.	        </div>
+86.	      </div>
+87.	    </div>
+88.	  </body>
+89.	</html>
