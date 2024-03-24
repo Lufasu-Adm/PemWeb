@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tugas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Web | CSS Tingkat Lanjut</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Profil</a></li>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <main class="content">
+        <section class="hero">
+          <img src="assets/Informatika logo utama tulisan hitam.png" alt="" />
+          <div class="hero-content">
+            <h1>Praktikum Pemrograman WEB</h1>
+            <br />
+            <h2>Universitas Telkom Surabaya</h2>
+            <br /><br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Dignissimos, aperiam dolore assumenda velit repellendus <br />
+              recusandae magni consectetur mollitia facere incidunt inventore
+              <br />
+              perspiciatis debitis doloribus ullam minima culpa voluptatem.
+              <br />
+              Repellendus, option.
+            </p>
+            <a href="" class="action-btn">Profile Saya</a>
+          </div>
+        </section>
+      </main>
+      <div class="footer">
+        <footer>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fab fa-instagram"></i>
+                <p>Instagram</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-facebook"></i>
+                <p>Facebook</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-twitter"></i>
+                <p>Twitter</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-telegram"></i>
+                <p>Telegram</p></a
+              >
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
