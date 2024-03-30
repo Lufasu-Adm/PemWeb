@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.grid {
+    height: 70vh;
+    width: 60vh;
+    display: grid;
+    background-color: #000000;
+    grid-template-areas: 
+    'input input input input'
+    'seven-btn eight-btn nine-btn div-btn'
+    'four-btn five-btn six-btn multi-btn'
+    'one-btn two-btn three-btn min-btn'
+    'zero-btn koma-btn plus-btn equal-btn'
+    ;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+input {
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0px 6px 0px 6px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+button {
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover {
+    background-color: rgb(136, 139, 139);
+    cursor: pointer;
+}
+
+.input {
+    grid-area: input;
+    margin: 5px 5px 15px 5px;
+}
+
+.one-btn {
+    grid-area: one-btn;
+}
+
+.two-btn {
+    grid-area: two-btn;
+}
+
+.three-btn {
+    grid-area: three-btn;
+}
+
+.four-btn {
+    grid-area: four-btn;
+}
+
+.five-btn {
+    grid-area: five-btn;
+}
+
+.six-btn {
+    grid-area: six-btn;
+}
+
+.seven-btn {
+    grid-area: seven-btn;
+}
+
+.eight-btn {
+    grid-area: eight-btn;
+}
+
+.nine-btn {
+    grid-area: nine-btn;
+}
+
+.zero-btn {
+    grid-area: zero-btn;
+}
+
+.plus-btn {
+    grid-area: plus-btn;
+}
+
+.min-btn {
+    grid-area: min-btn;
+}
+
+.multi-btn {
+    grid-area: multi-btn;
+}
+
+.koma-btn {
+    grid-area: koma-btn;
+}
+
+.div-btn {
+    grid-area: div-btn;
+}
+
+.equal-btn {
+    grid-area: equal-btn;
+}
