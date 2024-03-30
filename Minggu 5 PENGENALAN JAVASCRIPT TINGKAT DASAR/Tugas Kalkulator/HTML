@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="kalkulator.js"></script>
+    <link  rel="stylesheet" href="kalkulator_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <input type="text" class="input" id="input" readonly>
+            <button class="one-btn" onclick="PressNumberBtn(1)">1</button>
+            <button class="two-btn" onclick="PressNumberBtn(2)">2</button>
+            <button class="three-btn" onclick="PressNumberBtn(3)">3</button>
+            <button class="four-btn" onclick="PressNumberBtn(4)">4</button>
+            <button class="five-btn" onclick="PressNumberBtn(5)">5</button>
+            <button class="six-btn" onclick="PressNumberBtn(6)">6</button>
+            <button class="seven-btn" onclick="PressNumberBtn(7)">7</button>
+            <button class="eight-btn" onclick="PressNumberBtn(8)">8</button>
+            <button class="nine-btn" onclick="PressNumberBtn(9)">9</button>
+            <button class="zero-btn" onclick="PressNumberBtn(0)">0</button>
+            <button class="koma-btn" onclick="PressNumberBtn('.')">.</button>
+            <button class="plus-btn" onclick="PressPlusBtn()">+</button>
+            <button class="min-btn" onclick="PressMinBtn()">-</button>
+            <button class="div-btn" onclick="PressDivBtn()">%</button>
+            <button class="multi-btn" onclick="PressMultiBtn()">X</button>
+            <button class="equal-btn" onclick="EqualBtn()">=</button>
+            <button class="clear-btn" onclick="ClearBtn()">AC</button>
+        </div>
+    </div>
+</body>
+</html>
