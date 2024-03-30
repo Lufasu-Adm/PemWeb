@@ -1,0 +1,81 @@
+var Result = 0
+var CurrentVal = 0
+
+var PressedCalculateBtn = false;
+var symbol = ''
+
+function AddValueToInput(val) {
+    document.getElementById("input").value = document.getElementById("input").value + val
+}
+
+function PressNumberBtn(val) {
+    if (PressedCalculateBtn === true) {
+        PressedCalculateBtn = false
+        document.getElementById("input").value = ""
+        AddValueToInput(val)
+    }
+    else {
+        AddValueToInput(val)
+    }
+}
+
+function PressPlusBtn() {
+    if (PressedCalculateBtn === false) {
+        PressedCalculateBtn = true
+        CurrentVal = Number(document.getElementById("input").value)
+        console.log(CurrentVal)
+        symbol = '+'
+    }
+}
+
+function PressMinBtn() {
+    if (PressedCalculateBtn === false) {
+        PressedCalculateBtn = true
+        CurrentVal = Number(document.getElementById("input").value)
+        symbol = '-'
+    }
+}
+
+function PressDivBtn() {
+    if (PressedCalculateBtn === false) {
+        PressedCalculateBtn = true
+        CurrentVal = Number(document.getElementById("input").value)
+        symbol = '%'
+    }
+}
+
+function PressMultiBtn() {
+    if (PressedCalculateBtn === false) {
+        PressedCalculateBtn = true
+        CurrentVal = Number(document.getElementById("input").value)
+        symbol = 'X'
+    }
+}
+
+function EqualBtn() {
+    switch (symbol) {
+        case '+':
+            Result = Number(document.getElementById("input").value) + CurrentVal
+            break;
+        case '-':
+            Result = Number(document.getElementById("input").value) - CurrentVal
+            break;
+        case '%':
+            Result = CurrentVal / Number(document.getElementById("input").value)
+            break;
+        case 'X':
+            Result = Number(document.getElementById("input").value) * CurrentVal
+            break;
+        default:
+            break;
+    }
+    
+    document.getElementById("input").value = ""
+    Result = Number(Result.toFixed(14))
+    document.getElementById("input").value = Result
+    console.log(Result)
+}
+
+function ClearBtn() {
+    document.getElementById('input').value = '';
+}
