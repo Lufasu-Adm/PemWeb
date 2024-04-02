@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Registrasi</title>
+<style>
+    .error {
+        color: red;
+    }
+</style>
+</head>
+<body>
+
+<h2>Form Registrasi</h2>
+<form id="registrationForm" action="#" method="post">
+    <div>
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><span id="namaError" class="error"></span><br>
+    </div>
+    <div>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><span id="usernameError" class="error"></span><br>
+    </div>
+    <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><span id="emailError" class="error"></span><br>
+    </div>
+    <div>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+    </div>
+    <div>
+        <label for="passwordConfirmation">Konfirmasi Password:</label><br>
+        <input type="password" id="passwordConfirmation" name="passwordConfirmation"><span id="passwordError" class="error"></span><br>
+    </div>
+    <div>
+        <label for="telepon">No Telepon:</label><br>
+        <input type="tel" id="telepon" name="telepon"><span id="teleponError" class="error"></span><br>
+    </div>
+    <div>
+        <label for="jenisKelamin">Jenis Kelamin:</label><br>
+        <input type="radio" id="pria" name="jenisKelamin" value="pria">
+        <label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="jenisKelamin" value="wanita">
+        <label for="wanita">Wanita</label>
+        <span id="jenisKelaminError" class="error"></span><br>
+    </div>
+    <div>
+        <label for="website">Alamat Website:</label><br>
+        <input type="url" id="website" name="website"><span id="websiteError" class="error"></span><br>
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        var isValid = true;
+
+        // Validasi Nama
+        var namaInput = document.getElementById('nama');
+        var namaError = document.getElementById('namaError');
+        if (namaInput.value.trim() === '') {
+            namaError.textContent = 'Nama harus diisi';
+            isValid = false;
+        } else {
+            namaError.textContent = '';
+        }
+
+        // Validasi Username
+        var usernameInput = document.getElementById('username');
+        var usernameError = document.getElementById('usernameError');
+        if (usernameInput.value.trim() === '') {
+            usernameError.textContent = 'Username harus diisi';
+            isValid = false;
+        } else {
+            usernameError.textContent = '';
+        }
+
+        // Validasi Email
+        var emailInput = document.getElementById('email');
+        var emailError = document.getElementById('emailError');
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value)) {
+            emailError.textContent = 'Email tidak valid';
+            isValid = false;
+        } else {
+            emailError.textContent = '';
+        }
+
+        // Validasi Password
+        var passwordInput = document.getElementById('password');
+        var passwordConfirmationInput = document.getElementById('passwordConfirmation');
+        var passwordError = document.getElementById('passwordError');
+        if (passwordInput.value === '') {
+            passwordError.textContent = 'Password harus diisi';
+            isValid = false;
+        } else if (passwordInput.value !== passwordConfirmationInput.value) {
+            passwordError.textContent = 'Konfirmasi password tidak cocok';
+            isValid = false;
+        } else {
+            passwordError.textContent = '';
+        }
+
+        // Validasi No Telepon
+        var teleponInput = document.getElementById('telepon');
+        var teleponError = document.getElementById('teleponError');
+        var teleponRegex = /^\d{10,12}$/; // Angka dengan panjang 10-12 digit
+        if (!teleponRegex.test(teleponInput.value)) {
+            teleponError.textContent = 'No Telepon tidak valid';
+            isValid = false;
+        } else {
+            teleponError.textContent = '';
+        }
+
+        // Validasi Jenis Kelamin
+        var priaInput = document.getElementById('pria');
+        var wanitaInput = document.getElementById('wanita');
+        var jenisKelaminError = document.getElementById('jenisKelaminError');
+        if (!priaInput.checked && !wanitaInput.checked) {
+            jenisKelaminError.textContent = 'Jenis Kelamin harus dipilih';
+            isValid = false;
+        } else {
+            jenisKelaminError.textContent = '';
+        }
+
+        // Validasi Alamat Website
+        var websiteInput = document.getElementById('website');
+        var websiteError = document.getElementById('websiteError');
+        var urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+        if (!urlRegex.test(websiteInput.value)) {
+            websiteError.textContent = 'Alamat Website tidak valid';
+            isValid = false;
+        } else {
+            websiteError.textContent = '';
+        }
+
+        // Hentikan submit jika ada kesalahan validasi
+        if (!isValid) {
+            event.preventDefault();
+        }
+    });
+</script>
+
+</body>
+</html>
