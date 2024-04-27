@@ -52,6 +52,6 @@ Link GitHub  :
 
 
 
-  ## UNUTK YANG SUDAH JADI ADA DI SINI
+  ## UNTUK YANG SUDAH JADI ADA DI SINI
 
   [![CODINGAN UTS WEB YANG SUDAH DI SATUKAN]()](https://github.com/Lufasu-Adm/UTS-PemWeb)
