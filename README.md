@@ -1,4 +1,5 @@
 
+![Animasi](https://github.com/Lufasu-Adm/PemWeb/blob/main/text.gif)
 
 
 ## Dibuat Oleh
