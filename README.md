@@ -1,16 +1,4 @@
-<div align="center">
-  <h2 style="animation: blinker 1.5s linear infinite;">PENTING TOLONNH DI BACA</h2>
-</div>
 
-<style>
-  @keyframes blinker {
-    50% { opacity: 0; }
-  }
-  h2 {
-    color: red;
-    font-size: 24px;
-  }
-</style>
 
 
 ## Dibuat Oleh
