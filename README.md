@@ -15,7 +15,7 @@ Jordan Wijayanto
 
 Untuk Link UTS
 
-[![CODINGAN UTS WEB]()](https://github.com/Lufasu-Adm/PemWeb/tree/main/UTS)
+[![CODINGAN UTS WEB SAYA (Jordan Wijayanto)]()](https://github.com/Lufasu-Adm/PemWeb/tree/main/UTS)
 
 Jobdesk  
 
